@@ -9,8 +9,8 @@ from espnet2.bin.asr_inference import Speech2Text
 lang = ''
 
 englishSpeech2text = Speech2Text(
-    train_config="saved_models/english/english_config.yaml",
-    model_file="saved_models/english/english_model.pth",
+    train_config="saved_models/english/english_config.json",
+    model_file="saved_models/english/english_model.bin",
     device="cpu",
     minlenratio=0.0,
     maxlenratio=0.0,
@@ -21,8 +21,8 @@ englishSpeech2text = Speech2Text(
 )
 
 hebrewSpeech2text = Speech2Text(
-    train_config="saved_models/hebrew/hebrew_config.yaml",
-    model_file="saved_models/hebrew/hebrew_model.pth",
+    train_config="saved_models/hebrew/hebrew_config.json",
+    model_file="saved_models/hebrew/hebrew_model.bin",
     device="cpu",
     minlenratio=0.0,
     maxlenratio=0.0,
